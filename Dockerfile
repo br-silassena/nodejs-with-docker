@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 3000
 
 # Comando para iniciar a aplicação Node.js (substitua pelo comando real do seu aplicativo)
-CMD ["npm", "run", "dev"]
+CMD ["npm", "start"]
