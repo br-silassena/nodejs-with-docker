@@ -61,9 +61,9 @@ services:
  docker compose up -d --build 
 
 ```
-- ** docker compose up ** : Inicializa o container.
-- ** -d ** : Ativa o 'detached mode', permitindo que o container seja executado em segundo plano, liberando o terminal.
-- **  --build ** : Opcionalmente, essa opção reconstruirá a imagem usada para criar este container.
+- **docker compose up** : Inicializa o container.
+- **-d** : Ativa o 'detached mode', permitindo que o container seja executado em segundo plano, liberando o terminal.
+- **--build** : Opcionalmente, essa opção reconstruirá a imagem usada para criar este container.
 
 O container criado com esse docker-compose.yml está configurado para mapear a porta 3000 da máquina host com a porta 3000 do container.
 
@@ -77,7 +77,7 @@ docker exec -it nome_container npm install -g nodemon
 
 ```
 
-- ** docker exec -it ** : Este comando será executado de forma iterativa, permitindo a visualização da saída do comando.
-- ** npm install -g nodemon ** :  Este comando será executado dentro do container.
+- **docker exec -it** : Este comando será executado de forma iterativa, permitindo a visualização da saída do comando.
+- **npm install -g nodemon** :  Este comando será executado dentro do container.
 
 Com o volume devidamente mapeado, todas as alterações ocorrerão em tempo real no container. Configurações adicionais podem ser aplicadas ao serviço de acordo com suas preferências.
